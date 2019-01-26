@@ -91,6 +91,7 @@ body {
     background: black;
     width: 100%;
     padding: 5% 0;
+    text-align: center;
 }
 
 .about .container h2 {
@@ -138,7 +139,6 @@ body {
 
 .animation .head .container {
     text-align: center;
-    
     height: 100%;
 }
 
@@ -161,7 +161,6 @@ body {
 
 .animation .head .container p {
     margin-top: 5%;
-    padding: 0 10%;
     font-size: 1.2rem;
 }
 
@@ -230,12 +229,19 @@ body {
     height: 100%;
 }
 
+.contact .container .text{
+    margin: 20px;
+    text-align: center;
+}
+
 .contact .container .text h2 {
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-align: center;
+    margin: 20px;
 }
 
 textarea {
@@ -371,7 +377,7 @@ textarea:focus {
     color: #A5FFEE;
     letter-spacing: 0.1vw;
     font-size: 3rem;
-    margin: 0;
+    margin: 20px;
     line-height: 3rem;
 }
 
@@ -379,6 +385,7 @@ textarea:focus {
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
+    margin: 0px;
 }
 
 .graphic .container .text p {
