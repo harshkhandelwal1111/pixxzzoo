@@ -1,4 +1,13 @@
-function ScrollToDiv (e) {
-    var div = document.getElementsByClassName (e)[0];
-    div.scrollIntoView ({behavior: "smooth"});
-}
+// function ScrollToDiv(e) {
+//     console.log(e);
+//     (document.getElementsByClassName(e)[0]).scrollIntoView(true);
+// }
+
+// function ScrollToDiv(e)
+// {
+//  $('html,body').animate(
+//  {
+//   scrollTop: $("."+e).offset().top
+//  },
+//  'slow');
+// }

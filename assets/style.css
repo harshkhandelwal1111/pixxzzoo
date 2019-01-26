@@ -13,6 +13,7 @@ body {
 .navbar {
     background: black;
     align-items: flex-end;
+    box-shadow: 0 10px 200px 20px rgba(0, 0, 0, 0.753);
     /* height: 15vh; */
 }
 
@@ -52,11 +53,11 @@ body {
 
 .home .container .hometext h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    font-size: 5vw;
-    letter-spacing: 0.5vw;
+    font-size: 7rem;
+    letter-spacing: 0.8vw;
     color: #A5FFEE;
 }
 
@@ -69,6 +70,7 @@ body {
 .home .container button {
     border: none;
     outline: none;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.815);
     background: #A5FFEE;
     text-decoration: none;
@@ -88,11 +90,11 @@ body {
 .about .container {
     background: black;
     width: 100%;
-    padding-bottom: 5%;
+    padding: 5% 0;
 }
 
 .about .container h2 {
-    font-size: 4vh;
+    font-size: 2.6rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -107,6 +109,7 @@ body {
 .about .container button {
     border: none;
     outline: none;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.815);
     background: #A5FFEE;
     text-decoration: none;
@@ -142,22 +145,24 @@ body {
 .animation .head .container  h2 {
     text-transform: uppercase;
     color: white;
-    font-size: 4vh;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     letter-spacing: 0.2vw;
+    
 }
 
 .animation .head .container h4 {
     line-height: 0.8vh;
     color: white;
     font-weight: 700;
-    font-size: 2vh;
+    font-size: 1.5rem;
 }
 
 .animation .head .container p {
     margin-top: 5%;
     padding: 0 10%;
+    font-size: 1.2rem;
 }
 
 .animation .body {
@@ -195,15 +200,15 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: #A5FFEE;
-    font-size: 3vh;
-    letter-spacing: 0.2em;
+    font-size: 2.6rem;
+    letter-spacing: 0.2vw;
 }
 
 .animation .body .container .text h4 {
     margin-bottom: 10%;
     font-weight: 700;
     color: white;
-    font-size: 1.8vh;
+    font-size: 1.2rem;
 }
 
 .animation .body .container .anim3d {
@@ -215,6 +220,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.555);
     height: 100%;
     width: 100%;
 }
@@ -225,7 +231,7 @@ body {
 }
 
 .contact .container .text h2 {
-    font-size: 4vh;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -246,7 +252,12 @@ textarea:focus {
 }
 
 textarea::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.698);
+}
+
+textarea:focus {
+    background: rgba(192, 199, 198, 0.623);
+    transition: background 500ms ease-in;
 }
 
 .contact .container .form form .form-row #name,#email,#subject {
@@ -257,7 +268,13 @@ textarea::placeholder {
 }
 
 .contact .container .form form .form-row #name::placeholder,#email::placeholder,#subject::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.698);
+}
+
+.contact .container .form form .form-row #name:focus,#email:focus,#subject:focus {
+    outline: none;
+    background: rgba(192, 199, 198, 0.623);
+    transition: background 500ms ease-in;
 }
 
 .btn {
@@ -297,6 +314,7 @@ textarea::placeholder {
 .contact .container .map iframe {
     width: 100%;
     height: 40vh;
+    box-shadow: 0 30px 200px 30px rgba(0, 0, 0, 0.753);
 }
 
 .social {
@@ -307,7 +325,8 @@ textarea::placeholder {
 .social p {
     letter-spacing: 1vw;
     line-height: 5vh;
-    font-size: 2vh;
+    font-size: 1.2rem;
+    margin-bottom: 0; 
 }
 
 .social p a {
@@ -323,8 +342,8 @@ textarea::placeholder {
 
 .banner {
     width: 100%;
-    font-size: 2vh;
-    height: 4vh;
+    font-size: 15px;
+    /* height: 4vh; */
     background: rgb(29, 27, 27);
     margin: 0;
     display: flex;
@@ -338,9 +357,12 @@ textarea::placeholder {
 
 .graphic {
     background: rgb(34, 32, 32);
-    height: 100%;
-    padding: 5% 0;
+    height: 80%;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
 }
+
 
 .graphic .container h2 {
     text-transform: uppercase;
@@ -348,39 +370,53 @@ textarea::placeholder {
     font-weight: 900;
     color: #A5FFEE;
     letter-spacing: 0.1vw;
-    font-size: 4vh;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 3rem;
 }
 
 .graphic .container .text h3 {
-    font-size: 3vh;
-}
-
-.graphic .container .text p {
-    font-size: 2vh;
-}
-
-.graphic .container {
-    padding-bottom: 5%;
-}
-
-.navbar #brand {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    color: white;
     font-weight: 700;
 }
 
-.navbar .navbar-brand::before {
-    display: inline-block;
-    height:32px;
-    width:32px;
-    background-size: 32px 32px;
-    content: "";
-    background: url('resources/imgs/Pixxzzoo_Logo_2.webp') 0 0 no-repeat;
+.graphic .container .text p {
+    padding-top: 3%;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.graphic .container {
+    padding: 5% 0;
+    height: 80%;
+}
+
+.graphic .container .row {
+    margin: 0;
+    padding: 0;
+}
+
+.graphic .container .carousel {
+    margin: 5% auto;
+    box-shadow: 0 30px 200px 30px rgba(0, 0, 0, 0.753);
+    padding: 0%;
+}
+
+.navbar #brand {
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
     .home .container img {
         padding-top: 20%;
     }
+
+    .home .container {
+        padding: 0;
+    }
+
     .animation .body .container .sm {
         display: block;
     }
@@ -390,17 +426,7 @@ textarea::placeholder {
     .home .container .hometext h1 {
         font-size: 3em;
     }
-}
-
-@media only screen and (min-width: 600px) {
-    .graphic .container .text {
-        width: 50%;
-        float: right;
-        padding: 0;
-    }
-    .graphic .container .carousel {
-        width: 40%;
-        float: left;
-        padding: 2% 0%;
+    .about .container {
+        padding: 5%;
     }
 }
