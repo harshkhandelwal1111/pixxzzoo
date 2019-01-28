@@ -19,10 +19,10 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -67,18 +67,18 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" onclick="ScrollToDiv ('home')" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="ScrollToDiv ('about')" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="ScrollToDiv ('graphic')"href="#">Graphic</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="ScrollToDiv ('animation')"href="#">Animation</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="ScrollToDiv ('contact')"href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link scroll"  href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link scroll"  href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link scroll" href="#graphic">Graphic</a></li>
+            <li class="nav-item"><a class="nav-link scroll" href="#animation">Animation</a></li>
+            <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!--Home-->
-    <div class="home">
+    <div class="home" id="home">
       <div class="container col-lg-8 col-md-8 col-sm-10 col-xs-12">
         <img
           src="assets/resources/imgs/Pixxzzoo_Logo_2.webp"
@@ -103,7 +103,7 @@
     </div>
 
     <!--About-->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container col-lg-8 col-md-8 col-sm-10 col-xs-12">
         <h2>our story</h2>
         <p>
@@ -121,7 +121,7 @@
     </div>
 
     <!--Graphics-->
-    <div class="graphic">
+    <div class="graphic" id="graphic">
       <div class="container col-lg-8 col-md-8 col-sm-12 col-xs-12">
           <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-xs-12" data-ride="carousel">
@@ -167,7 +167,7 @@
     </div>
 
     <!--Animation-->
-    <div class="animation">
+    <div class="animation" id="animation">
       <div class="head">
         <div class="container col-lg-8 col-md-8 col-sm-10 col-xs-12">
           <h2>Animation with an <br> Impact</h2>
@@ -248,7 +248,7 @@
     </div>
 
     <!--Contact Us-->
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="container col-lg-8 col-md-8 col-sm-10 col-xs-12">
         <div class="text">
           <h2>Contact Us</h2>
@@ -270,13 +270,7 @@
               </div>
             <button type="submit" class="btn">Submit</button>
           </form>
-          <div class="location">
-            <p>Indore, Madhya Pradesh, India</p>
-            <p>8085270485</p>
-          </div>
-          <div class="email">
-            <a href="#">kagvikram@gmail.com</a>
-          </div>
+         
           <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117763.55154243136!2d75.79381000172378!3d22.72411583764091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C+Madhya+Pradesh!5e0!3m2!1sen!2sin!4v1547672567810" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
@@ -291,6 +285,13 @@
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </p>
+        <div class="location">
+          <p>Indore, Madhya Pradesh, India</p>
+          <p>8085270485</p>
+        </div>
+        <div class="email">
+          <a href="#">kagvikram@gmail.com</a>
+        </div>
       </div>
       
       <div class="banner">
