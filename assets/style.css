@@ -498,6 +498,7 @@ textarea:focus {
       .timg{
           height: 70%;
           width: 100%;
+          border-radius: 10%;
 
       }
       .colimg{
@@ -513,6 +514,7 @@ textarea:focus {
          margin-bottom: 5%;
          width: 20rem;
          height: 420px;
+         border-radius: 8%;
      }
 
      .align2{
@@ -520,6 +522,7 @@ textarea:focus {
          margin-bottom: 5%;
          width: 20rem;
          height:420px;
+         border-radius: 8%;
      }
 
      .align3{
@@ -527,6 +530,7 @@ textarea:focus {
          width: 20rem;
          margin-bottom:5%;
          height: 360px;
+         border-radius: 8%;
      }
       
   }
@@ -550,6 +554,7 @@ textarea:focus {
    
     .timg{
         height: 15em;
+        border-radius: 10%;
     }
 
     .colimg{
@@ -599,15 +604,18 @@ textarea:focus {
         margin-bottom: 5%;
         width:70%;
         margin-left:16%;
+        border-radius: 8%;
     }
     .align2{
         margin-bottom: 5%;
         width:70%;
         margin-left:16%;
+        border-radius: 8%;
     }
     .align3{
         margin-bottom: 5%;
         width:70%;
         margin-left:16%;
+        border-radius: 8%;
     }
 }
