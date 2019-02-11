@@ -491,12 +491,14 @@ textarea:focus {
   }
 
   @media only screen and (min-width: 600px) {
-      .carmargin{
+    .carmargin{
         margin-left: 30%;
         padding-bottom: 6%;
       }
       .timg{
-          height: 350px;
+          height: 70%;
+          width: 100%;
+
       }
       .colimg{
           padding-top: 5%;
@@ -506,6 +508,26 @@ textarea:focus {
           margin-left: 25%;
 
       }
+     .align{
+         margin-left: 20%;
+         margin-bottom: 5%;
+         width: 20rem;
+         height: 420px;
+     }
+
+     .align2{
+         margin-left:3%;
+         margin-bottom: 5%;
+         width: 20rem;
+         height:420px;
+     }
+
+     .align3{
+         margin-left: 9%;
+         width: 20rem;
+         margin-bottom:5%;
+         height: 360px;
+     }
       
   }
   .collab{
@@ -572,5 +594,20 @@ textarea:focus {
     }
     .about .container {
         padding: 5%;
+    }
+    .align{
+        margin-bottom: 5%;
+        width:70%;
+        margin-left:16%;
+    }
+    .align2{
+        margin-bottom: 5%;
+        width:70%;
+        margin-left:16%;
+    }
+    .align3{
+        margin-bottom: 5%;
+        width:70%;
+        margin-left:16%;
     }
 }
