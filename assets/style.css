@@ -531,7 +531,10 @@ textarea:focus {
 
  
 .card-text{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico',;
+} 
+.card-text-2{
+    font-family: 'Pacifico','cursive';
 } 
 
 @media (min-width: 768px) {
