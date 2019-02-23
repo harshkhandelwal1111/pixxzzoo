@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 // mongoose.connect('mongodb://readwriteuser_1:pixxzzoo@pixxzzoo-shard-00-00-ln0yh.mongodb.net:27017,pixxzzoo-shard-00-01-ln0yh.mongodb.net:27017,pixxzzoo-shard-00-02-ln0yh.mongodb.net:27017/test?ssl=true&replicaSet=Pixxzzoo-shard-0&authSource=admin&retryWrites=true', {useNewUrlParser: true});
 
-mongoose.connect("mongodb://localhost:27017/pixxzzoo", {useNewUrlParser: true});
+mongoose.connect("mongodb://harsh:password1@ds349175.mlab.com:49175/pixxzzoo", {useNewUrlParser: true});
 
 var contactSchema = new mongoose.Schema({
     name: String,
