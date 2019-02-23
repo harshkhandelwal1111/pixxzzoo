@@ -49,7 +49,10 @@ app.post("/", (req, res) => {
     })
 });
 
-app.listen(3000, () => {
-    console.log("The PIXXZZOO server has started!! at 3000");
-})
+// app.listen(3000, () => {
+//     console.log("The PIXXZZOO server has started!! at 3000");
+// })
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("server is running");
+});
 
