@@ -66,8 +66,8 @@ app.post('/', function (req, res) {
         to: "harsh.khandelwal2017@vitstudent.ac.in", // list of receivers
         subject: req.body.subject, // Subject line
         text: req.body.message, // plain text body
-        html: "Name: " +req.body.name+"<br>"+
-              "Email: "+req.body.email+"<br>"+
+        html: "Name: " +req.body.name+"<br><br>"+
+              "Email: "+req.body.email+"<br><br>"+
               "Message: "+req.body.message
                // html body
     };
