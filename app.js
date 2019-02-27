@@ -4,6 +4,8 @@ var express = require('express'),
     mongoose = require('mongoose'),
     path = require('path');
     nodeMailer = require('nodemailer');
+    async=require("async");
+    passport=require("passport");
 
 
 app.use(bodyParser.urlencoded({
@@ -53,7 +55,7 @@ app.get("/", (req, res) => {
 
 app.post('/', function (req, res) {
     let transporter = nodeMailer.createTransport({
-        service:'gmail',
+        service:'Gmail',
         auth: {
             user: 'harshkhandelwal421@gmail.com',
             pass: 'HarshHulk1001'
